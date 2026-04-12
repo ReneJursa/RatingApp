@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <variable
+        name="data"
+        type="com.ratingapp.RatingPerStudentParcel" />
+</data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".DisplayRatingsOneCriterionActivity">
+    <TextView
+        android:id="@+id/Text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Alle Bewertungen zu einem Kriterium"
+        />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/RowVPadding"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15sp"
+        android:onClick="goHome"
+        android:text="Zurück" />
+
+    <TextView
+        android:id="@+id/CourseNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/RowVPadding"
+        android:textStyle="bold"
+        android:text="@{@string/LabelCourseName(data.getCourseName())}"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+    <TextView
+        android:id="@+id/VornameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/RowVPadding"
+        android:textStyle="bold"
+        android:text="@{@string/LabelVorname(data.getVorname())}"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:id="@+id/NachnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/RowVPadding"
+        android:textStyle="bold"
+        android:text="@{@string/LabelNachname(data.getNachname())}"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:id="@+id/CriterionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/RowVPadding"
+        android:textStyle="bold"
+        android:text="@{@string/LabelCriterion(data.getCriterion())}"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:id="@+id/RatingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/RowVPadding"
+        android:textStyle="bold"
+        android:text="@{@string/LabelEndRating(data.rating)}"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/RowVPadding"
+            android:layout_marginLeft="5dp"
+            android:text="Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/RowVPadding"
+            android:layout_marginLeft="35dp"
+            android:text="Datum"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/RowVPadding"
+            android:layout_marginLeft="25dp"
+            android:text="Kriterium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/RowVPadding"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="Bewertung"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>
+</layout>
