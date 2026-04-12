@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="top"
+	android:orientation="vertical"
+	tools:context="com.ratingapp.AboutActivity">
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="20dp"
+		android:textSize="15sp"
+		android:onClick="goHome"
+		android:text="Zurück"
+		/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="15dp"
+		android:textSize="14sp"
+		android:text="# RatingApp\n\nVersion 1.2.1\n\nMit der RatingApp kann man Bewertungen zu mehreren Kriterien von sonstigen Leistungen von Personen im Unterricht, in Seminaren oder Kursen festhalten und als CSV-Dateien abspeichern. Zudem berechnet die App für jede Person kriterienbezogene Gesamtbewertungen aus allen durchgeführten Bewertungen innerhalb eines längeren Zeitraums, also z.B. aus allen Bewertungen im Laufe eines Schulhalbjahres oder Semesters.\n\n## Dokumentation\n\nEine ausführliche Anleitung zur App\nist hier unter doc zu finden:\nhttps://github.com/ReneJursa/RatingApp/"
+		/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="25dp"
+		android:textSize="15sp"
+		android:onClick="openDoc"
+		android:text="Anleitung"
+		/>
+
+    <TextView
+		android:id="@+id/readLicense"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="16dp"
+		/>
+        
+</LinearLayout>
+

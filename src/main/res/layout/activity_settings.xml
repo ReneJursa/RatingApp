@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="course"
+            type="com.ratingapp.Course" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".SettingsActivity">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/settings"
+                />
+            <TextView
+                android:id="@+id/name"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_height="@dimen/title_height"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="@{course.getName()}"
+                android:textSize="22sp"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="goHome"
+                android:textSize="15sp"
+                android:text="Zurück" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="24dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="Bewertungsskala"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioRatingScale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioRatingPCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="18sp"
+                android:text="@string/rating_pcm" />
+
+            <RadioButton
+                android:id="@+id/radioRatingABCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="16sp"
+                android:text="@string/rating_abcd" />
+
+            <RadioButton
+                android:id="@+id/radioRating1till6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="16sp"
+                android:text="@string/rating_1till6" >
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:layout_height="22dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Berechnung der"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_height="22dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:text="Gesamtbewertungen mit"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioAverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioArithmeticMean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="16sp"
+                android:text="@string/arith_mean" />
+
+            <RadioButton
+                android:id="@+id/radioMedian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="16sp"
+                android:text="@string/median" >
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:layout_height="24dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Anzahl der Kriterien"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:focusable="false"
+                android:onClick="Decrement"
+                android:text="-"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/criterion_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="16sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:focusable="false"
+                android:onClick="Increment"
+                android:text="+"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="#0f0"
+            android:padding="15dp"
+            android:text="Speichern"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:onClick="goHome"
+                android:text="Zurück"
+                android:visibility="visible" />
+        -->
+
+    </LinearLayout>
+</layout>

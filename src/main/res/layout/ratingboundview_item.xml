@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.ratingapp.RatingBoundView" />
+
+        <variable
+            name="callback"
+            type="com.ratingapp.ActionCallback" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="@{() -> callback.onClick(data)}"
+        android:orientation="vertical"
+        android:padding="@dimen/item_margin">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@{data.name}"
+            android:textSize="16sp"
+            android:paddingRight="24dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@{@string/criterion_char(data.criterion)}"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:paddingRight="48dp"/>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:text="@{@string/rating_char(data.rating)}"
+                android:paddingRight="48dp"/>
+            <View
+                android:layout_width="@dimen/fav_width"
+                android:layout_height="@dimen/fav_height"
+                android:layout_gravity="bottom"
+                android:background="@drawable/fav_button"
+                app:selected="@{data.flag}" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
