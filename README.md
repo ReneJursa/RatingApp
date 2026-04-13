@@ -2,7 +2,7 @@
 
 Version 1.2.1
 
-Mit der RatingApp kann man Bewertungen zu mehreren Kriterien von sonstigen Leistungen, wie z.B. mündlichen Beiträgen, Tests, Referaten oder Hausarbeiten von Schüler:innen, Studierenden oder allgemein Personen im Unterricht, in Seminaren oder Kursen festhalten und als CSV-Dateien abspeichern. Zudem berechnet die App für jede Person kriterienbezogene Gesamtbewertungen aus allen durchgeführten Bewertungen innerhalb eines längeren Zeitraums, also z.B. aus allen Bewertungen im Laufe eines Schulhalbjahres oder Semesters.
+Mit der RatingApp kann man Bewertungen zu mehreren Kriterien von sonstigen Leistungen, wie z.B. mündlichen Beiträgen, Tests, Referaten, praktische Arbeiten oder Hausarbeiten von Schüler:innen, Auszubildenden, Studierenden oder allgemein Personen im Unterricht, in Seminaren oder Kursen festhalten und als CSV-Dateien abspeichern. Zudem berechnet die App für jede Person kriterienbezogene Gesamtbewertungen aus allen durchgeführten Bewertungen innerhalb eines längeren Zeitraums, also z.B. aus allen Bewertungen im Laufe eines Schulhalbjahres oder Semesters.
 
 ## Lizenz
 
