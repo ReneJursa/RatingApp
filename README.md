@@ -52,5 +52,7 @@ Copyright (C) 2026 René Jursa
 ## Third Party Produkte
 
 Die RatingApp enthält Open-Source Quellcode von:
+
 *The Android Open Source Project, 2016: https://github.com/android/views-widgets-samples/tree/main/DataBindingDataBoundRecyclerView
+
 *Vivek Vashistha, 2023: https://github.com/vkvashistha/AndroidUtils/tree/main/fileutils
