@@ -10,7 +10,7 @@ eines Schulhalbjahres oder Semesters.
 
 In die App können Namenslisten von Personen eines Kurses als CSV-Datei eingelesen werden und erscheinen dann unter Kurse:  
 
-![Hauptansicht](doc/images/Hauptansicht.png?raw=tree)
+<img src="doc/images/Hauptansicht.png" width="300" alt="Hauptansicht">
 
 Durch Tippen auf einen Kursnamen kommt man zur Ansicht, in der die Bewertungen erfolgen:
 
