@@ -14,25 +14,25 @@ In die App können Namenslisten von Personen eines Kurses als CSV-Datei eingeles
 
 Durch Tippen auf einen Kursnamen kommt man zur Ansicht, in der die Bewertungen erfolgen:
 
-![Bewertungen_aktuell](doc/images/Bewertungen_aktuell.png?raw=tree)
+<img src="doc/images/Bewertungen_aktuell.png" width="300" alt="Bewertungen_aktuell">
 
 Die Bewertungen werden dabei durch Tippen auf einen Namen ausgewählt.
 
 In den Einstellung können für jeden Kurs eine Bewertungsskala und die Anzahl der Bewertungskriterien festgelegt werden:
 
-![Einstellungen](doc/images/Einstellungen.png?raw=tree)
+<img src="doc/images/Einstellungen.png" width="300" alt="Einstellungen">
 
 Aus allen für jede Person eingetragenen Bewertungen wird für jedes Kriterium eine Gesamtbewertung berechnet: 
 
-![Gesamtbewertungen](doc/images/Gesamtbewertungen.png?raw=tree)
+<img src="doc/images/Gesamtbewertungen.png" width="300" alt="Gesamtbewertungen">
 
 Für jede Person erhält man auch eine Übersicht über alle zu einem Kriterium eingetragenen Bewertungen und die dazugehörige Gesamtbewertung:
 
-![BewertungKriterium](doc/images/BewertungKriterium.png?raw=tree)
+<img src="doc/images/BewertungKriterium.png" width="300" alt="BewertungKriterium">
 
 Jede einzelne eingetragene Bewertung kann nachträglich geändert oder auch gelöscht werden: 
 
-![BewertungAendern](doc/images/BewertungAendern.png?raw=tree) 
+<img src="doc/images/BewertungAendern.png" width="300" alt="BewertungAendern">
 
 ## Installation
 
