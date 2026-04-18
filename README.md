@@ -18,7 +18,7 @@ Durch Tippen auf einen Kursnamen kommt man zur Ansicht, in der die Bewertungen e
 
 Die Bewertungen werden dabei durch Tippen auf einen Namen ausgewählt.
 
-In den Einstellung können für jeden Kurs eine Bewertungsskala und die Anzahl der Bewertungskriterien festgelegt werden:
+In den Einstellungen können für jeden Kurs eine Bewertungsskala und die Anzahl der Bewertungskriterien festgelegt werden:
 
 <img src="doc/images/Einstellungen.png" width="300" alt="Einstellungen">
 
