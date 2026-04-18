@@ -41,7 +41,7 @@ Hier sind fertige Installationspakete für Android zu finden:
 
 ## Anleitung zum Programm
 
-Eine Anleitung zum Programm ist hier zu finden: [Anleitung](doc/RatingApp_Anleitung_1.2.1.pdf). 
+Eine Anleitung zum Programm ist hier zu finden: [Anleitung](doc/RatingApp_Anleitung_1.2.1.pdf) 
 
 ## Lizenz
 
